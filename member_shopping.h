@@ -9,15 +9,15 @@ public:
 	CMail() {
 		calcArrange();
 	};
-	void calcCost();
+	double calcCost();
 	void checkMemberRank(char memberrank = 0);
-	void countNestCoffee(int coffee = 0);
-	void countCoffeeCups(int cups = 0);
-	void countChocolates(int chocolates = 0);
-	void countFruitTea(int tea = 0);
+	void countNestCoffee(double coffee = 0);
+	void countCoffeeCups(double cups = 0);
+	void countChocolates(double chocolates = 0);
+	void countFruitTea(double tea = 0);
 private:
 	void calcArrange();
-	float m_memberDiscount = 1.0;
-	map<string, int> m_goods;
-	map<string, int> m_countcost;
+	double m_memberDiscount = 1.0;
+	map<string, double> m_goods;
+	map<string, double> m_countcost;
 };
