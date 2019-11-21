@@ -2,8 +2,11 @@
 #include<iostream>
 #include<map>
 #include<string>
+//不要在头文件里using namespace或者using std::map
+//想想为啥
 using namespace std;
 
+//为啥取名叫CMail，含义?
 class CMail {
 public:
 	CMail() {
@@ -11,6 +14,7 @@ public:
 	};
 	double calcCost();
 	void checkMemberRank(char memberrank = 0);
+	//随着产品种类的增加，这个类的接口会不会爆炸？
 	void countNestCoffee(double coffee = 0);
 	void countCoffeeCups(double cups = 0);
 	void countChocolates(double chocolates = 0);
