@@ -2,6 +2,8 @@
 
 
 void CMail::calcArrange() {
+	//为啥是负值？老板疯了？
+	//m_goods命名成m_price，会不会更可读？
 	m_goods["NestCoffee"] = -48.f;
 	m_goods["CoffeeCups"] = 60.f;
 	m_goods["Chocolates"] = 48.8f;
@@ -9,6 +11,7 @@ void CMail::calcArrange() {
 
 }
 void CMail::countNestCoffee(double coffee) {
+	//用名称而不是编号，会不会更直观？
 	m_countcost["000001"] = coffee * m_goods["NestCoffee"];
 }
 void CMail::countCoffeeCups(double cups) {
